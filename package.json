@@ -1,0 +1,22 @@
+{
+  "name": "chat-node-app",
+  "version": "1.0.0",
+  "description": "this is a chat application like fb messenger",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benkate101290/chat-node-app.git"
+  },
+  "author": "QuangPN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Benkate101290/chat-node-app/issues"
+  },
+  "homepage": "https://github.com/Benkate101290/chat-node-app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
