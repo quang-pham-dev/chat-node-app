@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Chat-Node-App</title>
+    <title>Awesome Chat</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="images/logo_favicon/quang.jpg" />
+    <link rel="shortcut icon" href="images/logo_favicon/favicon-trungquandev.png" />
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="bower_components/AlertifyJS/build/css/alertify.css">
@@ -29,8 +29,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                        
                 </button>
-                <a class="navbar-brand" href="#" target="__blank">
-                    <img src="images/logo_favicon/icon-25.jpg" alt="logo.jpg">
+                <a class="navbar-brand" href="https://trungquandev.com/" target="__blank">
+                    <img src="images/logo_favicon/logo-trungquandev.png" alt="logo-trungquandev">
                 </a>
             </div>
             <div class="col-sm-3 no-padding">
@@ -68,13 +68,13 @@
                                     <h3>Thông báo</h3>
                                     <div class="noti_content">
                                         <span data-uid="${ user.id }">
-                                            <img class="avatar-small" src="images/users/avatar.jpg" alt=""> 
-                                            <strong>QuangPN</strong> đã chấp nhận lời mời kết bạn của bạn!
+                                            <img class="avatar-small" src="images/users/default-avatar-trungquandev-01.jpg" alt=""> 
+                                            <strong>Trung Quân</strong> đã chấp nhận lời mời kết bạn của bạn!
                                         </span><br><br><br>
 
                                         <span data-uid="${ user.id }">
-                                            <img class="avatar-small" src="images/users/quang.jpg" alt=""> 
-                                            <strong>QuangPN</strong> đã gửi cho bạn một lời mời kết bạn!
+                                            <img class="avatar-small" src="images/users/default-avatar-trungquandev-02.jpg" alt=""> 
+                                            <strong>Trung Quân</strong> đã gửi cho bạn một lời mời kết bạn!
                                         </span><br><br><br>
                                     </div>
                                     <div class="seeAll"><a href="#">Xem tất cả</a></div>
@@ -84,7 +84,7 @@
                     </li>
                     <li class="dropdown" id="dropdown-navbar-user" data-uid="user._id">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <img class="avatar-small" src="images/users//quang.jpg" alt="">
+                            <img class="avatar-small" src="images/users//default-avatar-trungquandev-02.jpg" alt="">
                             Trung Quân
                             <span class="caret"></span>
                         </a>
@@ -128,7 +128,7 @@
                             <li class="person" data-chat="contact._id">
                                 <div class="left-avatar">
                                     <div class="dot"></div>
-                                    <img src="images/users/quang.jpg" alt="">
+                                    <img src="images/users/default-avatar-trungquandev-01.jpg" alt="">
                                 </div>
                                 <span class="name">
                                     Trung Quân
@@ -154,11 +154,11 @@
                             <li class="person active" data-chat="person-default">
                                 <div class="left-avatar">
                                     <div class="dot online"></div>
-                                    <img class="avatar-online" src="images/users/quang.jpg" alt="">
+                                    <img class="avatar-online" src="images/users/default-avatar-trungquandev-02.jpg" alt="">
                                 </div>
-                                <span class="name">QuangPN (admin)</span>
+                                <span class="name">Trung Quân (admin)</span>
                                 <span class="time">Bây giờ</span>
-                                <span class="preview">Xin chào <strong>QuangPN</strong>...</span>
+                                <span class="preview">Xin chào <strong>Trung Quân</strong>...</span>
                             </li>
                         </a>
                     </ul>
@@ -169,7 +169,7 @@
             <div class="col-sm-9 sidenav no-padding">
                 <div class="right" data-chat="">
                     <div class="top">
-                        <span>To: <span class="name">Quang Pham (admin)</span></span>
+                        <span>To: <span class="name">Trung Quân (admin)</span></span>
                         <span class="chat-menu-right">
                             <a href="#attachsModal" id="show-attachs" data-toggle="modal">
                                 Tệp đính kèm
@@ -188,11 +188,11 @@
                     </div>
                     <div class="content-chat">
                         <div class="chat" data-chat="">
-                            <div class="bubble me" data-mess-id="${item._id}">Hello, I'm Quang Pham, author of ###</div>
-                            <div class="bubble you" data-mess-id="${item._id}">Really? I'm QuangPN too, author of ###, are you fake?</div>
+                            <div class="bubble me" data-mess-id="${item._id}">Hello, I'm Trung Quan, author of https://trungquandev.com</div>
+                            <div class="bubble you" data-mess-id="${item._id}">Really? I'm Trung Quan too, author of https://trungquandev.com, are you fake?</div>
                             <div class="bubble me" data-mess-id="${item._id}">This is me !!!</div>
                             <div class="bubble me bubble-image-file" data-mess-id="${item._id}">
-                                <img src="images/users/avatar.jpg" class="show-image-chat">
+                                <img src="images/users/default-avatar-trungquandev-01.jpg" class="show-image-chat">
                             </div>
                             <div class="bubble me bubble-image-file" data-mess-id="${item._id}">
                                     <a href="fileExample/Tệp văn bản - trungquandev.pdf" 
@@ -202,7 +202,7 @@
                                 </div>
                             <div class="bubble you" data-mess-id="${item._id}">And this is me @@ !!!</div>
                             <div class="bubble you bubble-image-file" data-mess-id="${item._id}">
-                                <img src="images/users/quang.jpg" class="show-image-chat">
+                                <img src="images/users/default-avatar-trungquandev-02.jpg" class="show-image-chat">
                             </div>
                             <div class="bubble you bubble-image-file" data-mess-id="${item._id}">
                                 <a href="fileExample/Tệp văn bản - trungquandev.docx" 
@@ -338,7 +338,7 @@
                                     <li class="_contactList" data-uid="user._id">
                                         <div class="contactPanel">
                                             <div class="user-avatar">
-                                                <img src="images/users/avatar.jpg" alt="">
+                                                <img src="images/users/default-avatar-trungquandev-01.jpg" alt="">
                                             </div>
                                             <div class="user-name">
                                                 <p>
@@ -366,7 +366,7 @@
                                     <li class="_contactList" data-uid="user._id">
                                         <div class="contactPanel">
                                             <div class="user-avatar">
-                                                <img src="images/users/avatar.jpg" alt="">
+                                                <img src="images/users/default-avatar-trungquandev-01.jpg" alt="">
                                             </div>
                                             <div class="user-name">
                                                 <p>
@@ -394,7 +394,7 @@
                                     <li class="_contactList" data-uid="user._id">
                                         <div class="contactPanel">
                                             <div class="user-avatar">
-                                                <img src="images/users/avatar.jpg" alt="">
+                                                <img src="images/users/default-avatar-trungquandev-01.jpg" alt="">
                                             </div>
                                             <div class="user-name">
                                                 <p>
@@ -419,7 +419,7 @@
                                     <li class="_contactList" data-uid="user._id">
                                         <div class="contactPanel">
                                             <div class="user-avatar">
-                                                <img src="images/users/avatar.jpg" alt="">
+                                                <img src="images/users/default-avatar-trungquandev-01.jpg" alt="">
                                             </div>
                                             <div class="user-name">
                                                 <p>
@@ -475,8 +475,8 @@
                 </div>
                 <div class="modal-body">
                     <div class="all-images" style="visibility: hidden;">
-                        <img src="images/users/avatar.jpg">
-                        <img src="images/users/quang.jpg">
+                        <img src="images/users/default-avatar-trungquandev-01.jpg">
+                        <img src="images/users/default-avatar-trungquandev-02.jpg">
                     </div>
                 </div>
             </div>
@@ -532,7 +532,7 @@
                                     <div class="col-md-3">
                                         <div class="text-center" id="div-update-avatar">
                                             <div id="image-edit-profile">
-                                                <img src="images/users/avatar.jpg" class="avatar img-circle" alt="avatar">
+                                                <img src="images/users/default-avatar-trungquandev-01.jpg" class="avatar img-circle" alt="avatar">
                                             </div>
                                             <h6>Tải lên một ảnh mới...</h6>
                                             <input type="file" class="form-control" id="input-change-avatar" name="avatar"><br>
@@ -706,7 +706,7 @@
                                     <li data-uid="test-uid-02">
                                         <div class="contactPanel">
                                             <div class="user-avatar">
-                                                <img src="images/users/quang.jpg" alt="">
+                                                <img src="images/users/default-avatar-trungquandev-02.jpg" alt="">
                                             </div>
                                             <div class="user-name">
                                                 <p>
