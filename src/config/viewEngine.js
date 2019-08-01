@@ -3,6 +3,7 @@ import expressEjsExtend from "express-ejs-extend";
 
 /**
  * Config 
+ * @param app from exactly express module
  */
 let configViewEngine = (app) => {
     app.use(express.static("./src/public"));
