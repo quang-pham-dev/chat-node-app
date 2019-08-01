@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/AlertifyJS/build/css/alertify.css">
-    
+
     <link href="css/auth.css" rel="stylesheet" />
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -19,6 +20,7 @@
 
     <script src="js/authConfig.js" type="text/javascript"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="col-sm-2"></div>
@@ -39,7 +41,7 @@
                                     <td>Blog:</td>
                                     <td>
                                         <a href="https://trungquandev.com/" target="_blank">
-                                        https://trungquandev.com
+                                            https://trungquandev.com
                                         </a>
                                     </td>
                                 </tr>
@@ -47,7 +49,7 @@
                                     <td>CV:</td>
                                     <td>
                                         <a href="https://cv.trungquandev.com/" target="_blank">
-                                        https://cv.trungquandev.com
+                                            https://cv.trungquandev.com
                                         </a>
                                     </td>
                                 </tr>
@@ -60,8 +62,10 @@
             <div class="row">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-7 text-center">
-                    <a class="btn big-login" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Đăng nhập</a>
-                    <a class="btn big-register" data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">Đăng ký</a>
+                    <a class="btn big-login" data-toggle="modal" href="javascript:void(0)"
+                        onclick="openLoginModal();">Đăng nhập</a>
+                    <a class="btn big-register" data-toggle="modal" href="javascript:void(0)"
+                        onclick="openRegisterModal();">Đăng ký</a>
                 </div>
                 <div class="col-sm-3"></div>
             </div>
@@ -86,56 +90,19 @@
                         <h4 class="modal-title">Đăng nhập</h4>
                     </div>
                     <div class="modal-body">
-                        <div class="alert alert-danger">Error example.</div>
-                        <div class="alert alert-success">Success example.</div>
 
-                        <!-- include('sections/login');-->
-                        <div class="box">
-                            <div class="content">
-                                <div class="social">
-                                    <a id="google_login" class="circle google" href="/auth/google" title="Đăng nhập bằng tài khoản Google">
-                                    <i class="fa fa-google-plus fa-fw"></i>
-                                    </a>
-                                    <a id="facebook_login" class="circle facebook" href="/auth/facebook" title="Đăng nhập bằng tài khoản Facebook">
-                                    <i class="fa fa-facebook fa-fw"></i>
-                                    </a>
-                                </div>
-                                <div class="division">
-                                    <div class="line l"></div>
-                                    <span>hoặc</span>
-                                    <div class="line r"></div>
-                                </div>
-                                <div class="error"></div>
-                                <div class="form loginBox">
-                                    <form method="POST" action="/login">
-                                        <input type="text" name="email" placeholder="Email" class="form-control" required>
-                                        <input type="password" name="password" placeholder="Password" class="form-control" required>
-                                        <input type="submit" value="Đăng nhập" class="btn btn-default btn-login">
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                        <%- include('alert/alert'); %>
+
+                        <%- include('login/login'); %>
+
+
+                        <%- include('register/register'); %>
                         
-                        <!-- include('sections/register');-->
-                        <div class="box">
-                            <div class="content registerBox" style="display:none;">
-                                <div class="form">
-                                    <form method="post" html="{:multipart=>true}" data-remote="true" action="/register" accept-charset="UTF-8">
-                                        <input id="email" class="form-control" type="text" placeholder="Email" name="email" required>
-                                        &nbsp;<label class="radio-inline"><input type="radio" name="gender" value="male" checked required> Nam</label>&nbsp;
-                                        &nbsp;<label class="radio-inline"><input type="radio" name="gender" value="female" required> Nữ</label>&nbsp;
-                                        <input id="password" class="form-control" type="password" placeholder="Password" name="password" required>
-                                        <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation" required>
-                                        <input class="btn btn-default btn-register" type="submit" value="Tạo tài khoản" name="commit">
-                                    </form>
-                                </div>
-                            </div>
-                        </div>                        
                     </div>
                     <div class="modal-footer">
                         <div class="forgot login-footer">
                             <span>Bạn chưa có tài khoản?
-                            <a href="javascript: showRegisterForm();">Tạo một tài khoản mới</a>
+                                <a href="javascript: showRegisterForm();">Tạo một tài khoản mới</a>
                             </span>
                         </div>
                         <div class="forgot register-footer" style="display:none">
@@ -148,4 +115,5 @@
         </div>
     </div>
 </body>
+
 </html>
