@@ -22,7 +22,7 @@
     "ejs": "^2.5.7",
     "express": "^4.17.1",
     "express-ejs-extend": "0.0.1",
-    "mongoose": "^4.13.9"
+    "mongoose": "^5.7.8"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
